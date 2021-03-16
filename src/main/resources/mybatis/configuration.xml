@@ -11,5 +11,6 @@
 
     <mappers>
    		<mapper resource="mybatis/mappers/example.xml" /> <!-- 여기에 쿼리문xml 경로 추가-->
+   		<mapper resource="mybatis/mappers/prod.xml" /> <!-- 여기에 쿼리문xml 경로 추가-->
     </mappers>
 </configuration>

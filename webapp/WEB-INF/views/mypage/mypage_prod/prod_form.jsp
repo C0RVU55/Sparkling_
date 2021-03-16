@@ -45,9 +45,9 @@
 							</td>
 						</tr>
 						<tr class="basic">
-							<td><label for="exer_cate">종목카테고리</label></td>
+							<td><label for="event_cate">종목카테고리</label></td>
 							<td><div class="content_product_insert_select_box">
-									<select id="exer_cate">
+									<select id="event_cate">
 										<option selected>종목</option>
 										<option>킥복싱</option>
 										<option>복싱</option>
@@ -64,12 +64,12 @@
 							<td><input type="text" id="prod_price"></td>
 						</tr>
 						<tr class="basic">
-							<td><label for="brand_name">브랜드명</label></td>
-							<td><input type="text" id="brand_name"></td>
+							<td><label for="prod_brand">브랜드명</label></td>
+							<td><input type="text" id="prod_brand"></td>
 						</tr>
 						<tr class="product_insert_div_img">
 							<td>대표이미지</td>
-							<td><input type="image" id="main_img"></td>
+							<td><input type="image" id="prod_img"></td>
 						</tr>
 						<tr class="product_insert_div_img">
 							<td>추가이미지</td>
@@ -79,32 +79,35 @@
 						<tr class="sizecolor_div">
 							<td>색상 및 사이즈</td>
 							<div>
-								<td id=sizecolor><label for="color">색상</label> <input
-									type="text" id="color"> <label for="size">사이즈 </label><input
-									type="text" id="last"><label for="size">재고 </label><input
-									type="last" id="size">
+								<td id=sizecolor>
+									<label for="color">색상</label> 
+									<input type="text" id="color"> 
+									<label for="size">사이즈</label>
+									<input type="text" id="last"><label for="size">재고</label>
+									<input type="last" id="size">
 									<button>+</button>
 									<div>
 										<div>블랙 55 35</div>
 										<div>블루 66 70</div>
-									</div></td>
+									</div>
+								</td>
 							</div>
 						</tr>
 						<tr class="plus">
-							<td><label for="prod_info">제품소개(성분)</label></td>
-							<td><textarea id="prod_info"></textarea></td>
+							<td><label for="prod_desc">제품소개(성분)</label></td>
+							<td><textarea id="prod_desc"></textarea></td>
 						</tr>
 						<tr class="plus">
-							<td><label for="prod_making">제조/수입내용</label></td>
-							<td><textarea id="prod_making"></textarea></td>
+							<td><label for="prod_from">제조/수입내용</label></td>
+							<td><textarea id="prod_from"></textarea></td>
 						</tr>
 						<tr class="plus">
-							<td><label for="prod_notice">세탁방법 및 주의사항</label></td>
-							<td><textarea id="prod_notice"></textarea></td>
+							<td><label for="prod_wash">세탁방법 및 주의사항</label></td>
+							<td><textarea id="prod_wash"></textarea></td>
 						</tr>
 						<tr class="plus">
-							<td><label for="prod_guarantee">품질보증기준</label></td>
-							<td><textarea id="prod_guarantee"></textarea></td>
+							<td><label for="prod_qual">품질보증기준</label></td>
+							<td><textarea id="prod_qual"></textarea></td>
 						</tr>
 						<tr class="large">
 							<td><label for="prod_detail">상세페이지</label></td>
@@ -119,8 +122,8 @@
 						</tr>
 					</table>
 					<div class="product_insert_btn">
-						<button class="insert_btn">상품등록</button>
-						<button class="product_delclose_btn">상품목록으로</button>
+						<button class="insert_btn" type="submit">상품등록</button>
+						<button class="product_delclose_btn"><a href="${pageContext.request.contextPath}/mypage/prod">상품목록으로</a></button>
 					</div>
 				</div>
 				<!--//delivery_info-->

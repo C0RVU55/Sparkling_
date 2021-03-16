@@ -26,7 +26,7 @@
 					<div class="content_product_header">
 						<div>상품관리</div>
 						<button class="product_registration_btn">
-							<a href="./배송판매자_마이페이지_상품등록.html">상품등록</a>
+							<a href="${pageContext.request.contextPath}/mypage/prod/form">상품등록</a>
 						</button>
 						<div class="content_product_select_box">
 							<select>
