@@ -102,7 +102,7 @@
 				<div class="card_container">
 					<div class="card">
 						<a class="card1" href="/view/matching/스파링신청서.html"> <img
-							class="card_img" src="/image/img/search.jpg" alt="">
+							class="card_img" src="${pageContext.request.contextPath}/assets/image/img/search.jpg" alt="">
 							<div class="card_profile">
 								<div class="card_address">
 									<i class="fas fa-map-marker-alt address_icon"></i>
