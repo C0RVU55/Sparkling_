@@ -3,13 +3,14 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
-	<!-- alias 영역-->
-	<!-- 
-    <typeAliases>
-    	<typeAlias alias="GuestVo" type="com.javaex.vo.GuestVo" />
-    </typeAliases> -->
+	<!-- alias 영역 -->
+	<typeAliases>
+		<typeAlias alias="AlarmVo" type="com.javaex.vo.AlarmVo" />
+	</typeAliases>
 
-    <mappers>
-   		<mapper resource="mybatis/mappers/example.xml" /> <!-- 여기에 쿼리문xml 경로 추가-->
-    </mappers>
+	<mappers>
+		<mapper resource="mybatis/mappers/example.xml" /> <!-- 여기에 쿼리문xml 경로 추가 -->
+		<mapper resource="mybatis/mappers/alarm.xml" /> <!-- 여기에 쿼리문xml 경로 추가 -->
+	</mappers>
+
 </configuration>

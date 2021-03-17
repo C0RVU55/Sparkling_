@@ -9,13 +9,14 @@ public class AlarmVo {
 	public String sell_type;
 	public String alarm_date;
 	public String prod_state;
+	public String user_id;
 
 	public AlarmVo() {
 		super();
 	}
 
 	public AlarmVo(int alarm_no, int from_user_no, int to_user_no, String alarm_content, String sell_type,
-			String alarm_date, String prod_state) {
+			String alarm_date, String prod_state, String user_id) {
 		super();
 		this.alarm_no = alarm_no;
 		this.from_user_no = from_user_no;
@@ -24,6 +25,7 @@ public class AlarmVo {
 		this.sell_type = sell_type;
 		this.alarm_date = alarm_date;
 		this.prod_state = prod_state;
+		this.user_id = user_id;
 	}
 
 	public int getAlarm_no() {
@@ -80,6 +82,14 @@ public class AlarmVo {
 
 	public void setProd_state(String prod_state) {
 		this.prod_state = prod_state;
+	}
+
+	public String getUser_id() {
+		return user_id;
+	}
+
+	public void setUser_id(String user_id) {
+		this.user_id = user_id;
 	}
 
 	@Override

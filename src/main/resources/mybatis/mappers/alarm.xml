@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="alarm">
+
+	<select id="selectAlarm" resultType="AlarmVo">
+		<![CDATA[
+			SELECT  a.alarm_date,
+        			u.user_id,
+        			a.sell_type,
+        			a.prod_state,
+        			a.alarm_content
+			FROM    alarm a, users u
+			WHERE   a.from_user_no = u.user_no
+					and to_user_no = 1
+		]]>
+	</select>
+
+</mapper>
