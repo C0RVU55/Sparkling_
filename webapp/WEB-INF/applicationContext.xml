@@ -28,20 +28,22 @@
 			expression="org.springframework.stereotype.Component" />
 	</context:component-scan>
 
+	
 	<!-- oracle datasource -->
-	<bean id="oracleDatasource" class="oracle.jdbc.pool.OracleDataSource" destroy-method="close">
-		<property name="URL" value="jdbc:oracle:thin:@localhost:1521:xe" />
-		<property name="user" value="sparkling" />
-		<property name="password" value="sparkling" />
-		<property name="connectionCachingEnabled" value="true" />
-		<qualifier value="main-db" />
-	</bean>
+    <bean id="oracleDatasource" class="oracle.jdbc.pool.OracleDataSource" destroy-method="close">
+        <property name="URL" value="jdbc:oracle:thin:@localhost:1521:xe" /> <!--jdbc 드라이버-->
+        <property name="user" value="sparkling" /> <!-- 데이터베이스 아이디 -->
+        <property name="password" value="sparkling" /> <!-- 데이터베이스 비밀번호 -->
+        <property name="connectionCachingEnabled" value="true" />
+        <qualifier value="main-db" />
+    </bean>
 
-	<!-- MyBatis SqlSessionFactoryBean 설정 -->
+	<!-- MyBatis SqlSessionFactoryBean  설정-->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="oracleDatasource" />
 		<property name="configLocation" value="classpath:mybatis/configuration.xml" />
 	</bean>
+
 
 	<!-- MyBatis SqlSessionTemplate 설정 -->
 	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">

@@ -125,7 +125,7 @@
         
     
             <!--등록/취소 버튼-->
-            <div class="group_btn">
+            <div class="group_btn_qna">
                 <span class="inner_btn">
                     <button type="button" onclick="history.back();return false;" class="btn">취소</button>
                     <input type="submit" value="등록" class="btn btn_submit">

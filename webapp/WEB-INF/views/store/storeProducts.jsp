@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/store.css">
 </head>
 
-<body>
+<body class="proBody">
     
 <div class="wrap">
     <div class="container">
@@ -36,7 +36,7 @@
 			<div id="sectionView">
 				
 
-					<img src="../../image/store_img/glove1.jpg" alt="상품 대표 이미지" class="bg" width="430" height="552"> <!--상품 대표 이미지-->
+					<img src="${pageContext.request.contextPath}/assets/image/store_img/glove1.jpg" alt="상품 대표 이미지" class="bg" width="430" height="552"> <!--상품 대표 이미지-->
 
 					<!--상품 정보,선택,가격,장바구니,구매 영역-->
 					<div class="goods_area"> 
@@ -84,9 +84,9 @@
 							</dl>
 							-->
 
-						<!--갯수--> 
+						<!--개수--> 
 							<dl class="list">
-								<dt class="tit">갯수</dt> <dd class="desc">1개</dd>
+								<dt class="tit">개수</dt> <dd class="desc">1개</dd>
 							</dl> <!----> <!----> <!----> <!----> <!---->  <!----> <!----> <!---->
 						</div>
 
@@ -97,8 +97,10 @@
 							<!--상품 선택-->
 							<div class="goods_info">
 								<dl class="list fst">
-									<dt class="tit">상품 선택</dt> 
+									<dt class="tit">선택 상품</dt> 
+									<!--
 									<dd class="desc">
+									
 										<select id="prod_cate">
 											<option selected>선택하기</option>
 											<option>펀치킹 레드</option>
@@ -106,6 +108,7 @@
 											<option>펀치킹 블랙</option>
 										</select>
 									</dd>
+									-->
 								</dl>
 							</div>
 							
@@ -172,26 +175,26 @@
 		<div class="layout_wrap goods_view_area">
 
 			<!--상세정보,상품정보,고객후기,상담문의 탭-->
-			<div class="goods_tab">
+			<div class="goods_tab" id="proDesc">
 				<ul class="goods_view_tab">
 					<li>
-						<a class="" href="">상품설명</a>
+						<a href="#proDesc">상품설명</a>
 					</li>
 					<li>
-						<a href="">상품정보</a>
+						<a href="#proInfo">상품정보</a>
 					</li>
 					<li>
-						<a href="">고객후기</a>
+						<a href="#proReview">고객후기</a>
 					</li>
 					<li>
-						<a href="">상담문의</a>
+						<a href="#proQna">상담문의</a>
 					</li>
 				</ul>
 			</div> <!--goods_tab-->
 
 			<!--상세정보(이미지)-->
 			<div class="goods_view">
-				<img src="../../image/store_img/glove1-1.png" alt="상품 추가 이미지" class="bg"> <!--상품 추가 이미지-->
+				<img src="${pageContext.request.contextPath}/assets/image/store_img/glove1-1.png" alt="상품 추가 이미지" class="bg"> <!--상품 추가 이미지-->
 			</div>
 
 
@@ -199,19 +202,19 @@
 
 
 			<!--상세정보,상품정보,고객후기,상담문의 탭-->
-			<div class="goods_tab">
+			<div class="goods_tab" id="proInfo">
 				<ul class="goods_view_tab">
 					<li>
-						<a href="">상품설명</a>
+						<a href="#proDesc">상품설명</a>
 					</li>
 					<li>
-						<a href="">상품정보</a>
+						<a href="#proInfo">상품정보</a>
 					</li>
 					<li>
-						<a href="">고객후기</a>
+						<a href="#proReview">고객후기</a>
 					</li>
 					<li>
-						<a href="">상담문의</a>
+						<a href="#proQna">상담문의</a>
 					</li>
 				</ul>
 			</div> <!--goods_tab-->
@@ -248,19 +251,19 @@
 				
 				
 			<!--상세정보,상품정보,고객후기,상담문의 탭-->
-			<div class="goods_tab">
+			<div class="goods_tab" id="proReview">
 				<ul class="goods_view_tab">
 					<li>
-						<a href="">상품설명</a>
+						<a href="#proDesc">상품설명</a>
 					</li>
 					<li>
-						<a href="">상품정보</a>
+						<a href="#proInfo">상품정보</a>
 					</li>
 					<li>
-						<a href="">고객후기</a>
+						<a href="#proReview">고객후기</a>
 					</li>
 					<li>
-						<a href="">상담문의</a>
+						<a href="#proQna">상담문의</a>
 					</li>
 				</ul>
 			</div> <!--goods_tab-->
@@ -300,8 +303,7 @@
 										<div class="sort" style="bottom:-9px">
 											<select class="sort_select" onchange="this.form.sort.value=this.value;this.form.submit()">
 												<option value="1">최근등록순</option>
-												<option value="2">좋아요많은순</option>
-												<option value="3">조회많은순</option>
+												<option value="2">조회많은순</option>
 											</select>
 										</div>
 									</div> <!--sort-wrap-->
@@ -518,21 +520,21 @@
 
 
 				<!--상세정보,상품정보,고객후기,상담문의 탭-->
-				<div class="goods_tab">
+				<div class="goods_tab" id="proQna">
 					<ul class="goods_view_tab">
-						<li>
-							<a href="">상품설명</a>
-						</li>
-						<li>
-							<a href="">상품정보</a>
-						</li>
-						<li>
-							<a href="">고객후기</a>
-						</li>
-						<li>
-							<a href="">상담문의</a>
-						</li>
-					</ul>
+					<li>
+						<a href="#proDesc">상품설명</a>
+					</li>
+					<li>
+						<a href="#proInfo">상품정보</a>
+					</li>
+					<li>
+						<a href="#proReview">고객후기</a>
+					</li>
+					<li>
+						<a href="#proQna">상담문의</a>
+					</li>
+				</ul>
 				</div> <!--goods_tab-->
 
 				<!--상담문의-->	

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace= "profile">
+	
+
+   
+	   <insert id="insertProfile" parameterType="ProfileVo" >
+      <![CDATA[
+         insert into profile
+         values(SEQ_PROFILE_NO.nextval,
+                 #{userNo},
+                 #{height},
+                 #{weight},
+                 #{career},
+                 #{major},
+                 #{exp},
+                 sysdate,
+                 #{recentlyExer},
+                 #{word},
+                 #{profileGymEvent},
+                 #{day},
+                 #{time},
+                 #{address,jdbcType=VARCHAR}
+                 )      
+               
+      ]]>
+   </insert>
+   
+	
+
+</mapper>

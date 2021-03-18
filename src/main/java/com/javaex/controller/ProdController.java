@@ -40,4 +40,12 @@ public class ProdController {
 		prodservice.prodWrite(prodvo);
 		return "mypage/mypage_prod/prod_manage";
 	}
+	
+	//드롭다운 예제파일 실행
+	@RequestMapping(value = "/exam", method = { RequestMethod.GET, RequestMethod.POST })
+	public String exam() {
+		
+		
+		return "mypage/mypage_prod/NewFile1";
+	}
 }

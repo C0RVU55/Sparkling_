@@ -136,17 +136,23 @@ input:-ms-input-placeholder {
 
 
 /*///////////////판매상품 리스트//////////////*/
+.wrap2 {
+  max-width: 100%;
+  overflow: hidden;
+}
+.wrap2 .container2 {
+  width: 1106px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 
 .item {
   float: left;
   box-sizing: border-box;
-  padding: 25px 0px 0px 0px;
+  padding: 25px 32px 0px 28px;
 }
 
-#goodsList .left_item{
-  box-sizing: border-box;
-  padding: 25px 0px 0px 63px;
-}
 
 /*상품이름*/
 .info .name {
@@ -205,6 +211,10 @@ input:-ms-input-placeholder {
 
 
 /*/////////////////////상품 상세페이지///////////////////*/
+.proBody{
+	position: relative;
+}
+
 /*상단여백*/
 #sectionView{
   height: 800px;
@@ -409,6 +419,10 @@ select {
 }
 
 /*총 상품금액*/
+.price {
+	padding-top: 15px;
+}
+
 .price_total .total {
   text-align: right;
   padding-bottom: 30px;
@@ -1061,17 +1075,17 @@ h3 {
 }
 
 /*문의 버튼영역*/
-.group_btn {
+.group_btn_qna {
   overflow: hidden;
   padding-top: 50px;
   text-align: center;
 }
 
-.group_btn .inner_btn {
+.group_btn_qna .inner_btn {
   display: inline-block;
 }
 
-.group_btn .btn {
+.group_btn_qna .btn {
   float: left;
   width: 150px;
   height: 42px;

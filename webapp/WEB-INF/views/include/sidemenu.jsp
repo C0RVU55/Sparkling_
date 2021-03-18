@@ -19,7 +19,7 @@
 		<li class="title"><span class="menu">배송판매관리</span></li>
 		<li><a href="./예약판매자2_마이페이지_사업자계정정보1.html"><span class="menu">사업자계정
 					관리</span><span class="arrow">></span></a></li>
-		<li><a href="./배송판매자_마이페이지_상품관리.html"><span class="menu">상품관리</span><span
+		<li><a href="${pageContext.request.contextPath}/mypage/prod"><span class="menu">상품관리</span><span
 				class="arrow">></span></a></li>
 		<li><a href="./배송판매자_마이페이지_배송관리.html"><span class="menu">배송관리</span><span
 				class="arrow">></span></a></li>

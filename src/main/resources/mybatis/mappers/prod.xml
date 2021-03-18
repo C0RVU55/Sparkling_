@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace= "prod">
+	
+	
+   
+	   <insert id="insert" parameterType="com.javaex.vo.ProductVo" >
+      <![CDATA[
+         insert into product
+         values( SEQ_prodcut_NO.nextval,
+                 #{prod_no},
+                 #{sell_no},
+                 #{prod_cate},
+                 #{event_cate},
+                 #{prod_name},
+                 #{prod_price},
+                 #{prod_brand},
+                 #{prod_desc},
+                 #{prod_from},
+                 #{prod_wash},
+                 #{prod_qual},
+                 #{prod_detail},
+                 #{prod_detail_img_name},
+                 #{prod_detail_img_savename },
+                 sysdate
+                 )      
+               
+      ]]>
+   </insert>
+   
+	
+
+</mapper>

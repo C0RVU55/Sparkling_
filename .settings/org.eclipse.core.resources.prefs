@@ -1,4 +1,4 @@
 eclipse.preferences.version=1
 encoding//webapp/WEB-INF/views/matching=UTF-8
+encoding//webapp/WEB-INF/views/matching/matchinfoForm.jsp=UTF-8
 encoding//webapp/WEB-INF/views/store/storeList.jsp=UTF-8
-encoding/<project>=UTF-8

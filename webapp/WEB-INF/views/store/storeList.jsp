@@ -69,15 +69,15 @@
       
 
 
-<div class="wrap">
-	<div class="container">
+<div class="wrap2">
+	<div class="container2">
     <div id="goodsList">
       <ul>
         <!--첫번째 줄-->
         <li>
           <div class="item">
               <a class="img" style="background-image: url();" href="./store_products.html">
-                <img src="../../image/store_img/glove1.jpg" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
+                <img src="${pageContext.request.contextPath}/assets/image/store_img/glove1.jpg" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
               </a> 
 
               <div>
@@ -94,7 +94,7 @@
         <li>
           <div class="item left_item">
               <a class="img" style="background-image: url();" href="./store_products.html">
-                <img src="../../image/store_img/graybox.jpg" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
+                <img src="${pageContext.request.contextPath}/assets/image/store_img/graybox.jpg" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
               </a> 
 
               <div>
@@ -109,7 +109,7 @@
         <li>
           <div class="item left_item">
               <a class="img" style="background-image: url();" href="./store_products.html">
-                <img src="../../image/store_img/graybox.jpg" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
+                <img src="${pageContext.request.contextPath}/assets/image/store_img/graybox.jpg" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
               </a> 
 
               <div>
@@ -126,7 +126,7 @@
         <li>
           <div class="item">
               <a class="img" style="background-image: url();" href="./store_products.html">
-                <img src="../../image/store_img/graybox.jpg" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
+                <img src="${pageContext.request.contextPath}/assets/image/store_img/graybox.jpg" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
               </a> 
 
               <div>
@@ -141,7 +141,7 @@
         <li>
           <div class="item left_item">
               <a class="img" style="background-image: url();" href="./store_products.html">
-                <img src="../../image/store_img/graybox.jpg" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
+                <img src="${pageContext.request.contextPath}/assets/image/store_img/graybox.jpg" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
               </a> 
 
               <div>
@@ -156,7 +156,7 @@
         <li>
           <div class="item left_item">
               <a class="img" style="background-image: url();" href="./store_products.html">
-                <img src="../../image/store_img/graybox.jpg" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
+                <img src="${pageContext.request.contextPath}/assets/image/store_img/graybox.jpg" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
               </a> 
 
               <div>
@@ -173,7 +173,7 @@
         <li>
           <div class="item">
               <a class="img" style="background-image: url();" href="./store_products.html">
-                <img src="../../image/store_img/graybox.jpg" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
+                <img src="${pageContext.request.contextPath}/assets/image/store_img/graybox.jpg" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
               </a> 
 
               <div>
@@ -190,7 +190,7 @@
         <li>
           <div class="item left_item">
               <a class="img" style="background-image: url();" href="./store_products.html">
-                <img src="../../image/store_img/graybox.jpg" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
+                <img src="${pageContext.request.contextPath}/assets/image/store_img/graybox.jpg" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
               </a> 
 
               <div>
@@ -205,7 +205,7 @@
         <li>
           <div class="item left_item">
               <a class="img" style="background-image: url();" href="./store_products.html">
-                <img src="../../image/store_img/graybox.jpg" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
+                <img src="${pageContext.request.contextPath}/assets/image/store_img/graybox.jpg" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
               </a> 
 
               <div>
