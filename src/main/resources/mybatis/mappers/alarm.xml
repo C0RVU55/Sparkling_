@@ -14,6 +14,7 @@
 			FROM    alarm a, users u
 			WHERE   a.from_user_no = u.user_no
 					and to_user_no = 1
+			ORDER BY a.alarm_no asc
 		]]>
 	</select>
 

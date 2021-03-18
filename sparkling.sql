@@ -12,9 +12,13 @@ CREATE TABLE users (
     CONSTRAINT UK_USERS_NICKNAME UNIQUE (NICKNAME)
 );
 
-INSERT INTO users VALUES('1', 'test_id', 'test_name', '1234', 'test_nick', 'test_addr', 'test_photo', '01011111111', '1', sysdate);
+DELETE FROM users;
+CREATE SEQUENCE seq_user_no INCREMENT by 1 START WITH 1 NOCACHE;
+DROP SEQUENCE seq_user_no;
 
-INSERT INTO users VALUES('2', 'test_id2', 'test_name2', '1234', 'test_nick2', 'test_addr2', 'test_photo2', '01022222222', '1', sysdate);
+INSERT INTO users VALUES(seq_user_no.nextval, 'test_id', 'test_name', '1234', 'test_nick', 'test_addr', 'test_photo', '01011111111', '1', sysdate);
+
+INSERT INTO users VALUES(seq_user_no.nextval, 'test_id2', 'test_name2', '1234', 'test_nick2', 'test_addr2', 'test_photo2', '01022222222', '1', sysdate);
 
 SELECT
     *
@@ -27,8 +31,8 @@ CREATE TABLE alarm (alarm_no NUMBER NOT NULL,
                     sell_type VARCHAR2(200) NOT NULL,
                     alarm_date DATE NOT NULL,
                     prod_state VARCHAR2(200) NOT NULL);
-                    
-                    DROP TABLE alarm;
+
+DROP TABLE alarm;
 
 CREATE UNIQUE INDEX PK_alarm
 	ON alarm (
@@ -63,12 +67,16 @@ ALTER TABLE alarm
 		REFERENCES users (
 			user_no
 		);
+
+DELETE FROM alarm;
+CREATE SEQUENCE seq_alarm_no INCREMENT by 1 START WITH 1 NOCACHE;
+DROP SEQUENCE seq_alarm_no;
         
-INSERT INTO alarm VALUES('1', '1', '1', '결제가 완료되었습니다', '매칭', sysdate, '결제완료');
+INSERT INTO alarm VALUES(seq_alarm_no.nextval, '1', '1', '결제가 완료되었습니다', '매칭', sysdate, '결제완료');
 
-INSERT INTO alarm VALUES('3', '1', '1', '매칭이 등록되었습니다', '매칭', sysdate, '매칭 진행 중');
+INSERT INTO alarm VALUES(seq_alarm_no.nextval, '1', '1', '매칭이 등록되었습니다', '매칭', sysdate, '매칭 진행 중');
 
-INSERT INTO alarm VALUES('2', '2', '2', '배송이 완료되었습니다', '배송', sysdate, '배송완료');
+INSERT INTO alarm VALUES(seq_alarm_no.nextval, '2', '2', '배송이 완료되었습니다', '배송', sysdate, '배송완료');
 
 SELECT
     *
@@ -81,4 +89,4 @@ SELECT  a.alarm_date,
         a.alarm_content
 FROM    alarm a, users u
 WHERE   a.from_user_no = u.user_no
-        and a.to_user_no = 1;    
+        and a.to_user_no = 1;
