@@ -2007,7 +2007,9 @@ element.style {
 .info_table {
 	font-size: 16px;
 }
-
+.infotite2{
+	width:200px;
+}
 /*프로필 사진 변경하기 버튼*/
 .info_table #nickname, .info_table #user_name {
 	width: 400px;
